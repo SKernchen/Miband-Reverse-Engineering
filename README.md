@@ -14,3 +14,9 @@ python helper.py --mode="encrypt" --key={Key} -V={Value}
 ```
 > The key can also be provided in a seperated file in the directory called key.txt.
 
+
+## Process
+To reverse engineer the Mi Band, many actions came in place. Here are all of the commands used provided in different files.
+#### discovery.sh
+This file show how to see if a Bluetooth adapter is running on your system and if it can find the Mi Band based on the Mac adress.
+
