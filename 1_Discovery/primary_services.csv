@@ -1,0 +1,12 @@
+uuid, name, handle_start, handle_end, 
+00001800-0000-1000-8000-00805f9b34fb, GAP Service, 0x0001, 0x0007
+00001801-0000-1000-8000-00805f9b34fb, GATT Service, 0x0008, 0x0008
+0000180a-0000-1000-8000-00805f9b34fb, Device Information Service, 0x0009, 0x0013
+00001530-0000-3512-2118-0009af100700, Vendor specific (DFU Firmware Service), 0x0014, 0x0019
+00001811-0000-1000-8000-00805f9b34fb, Alert Notification Service, 0x001a, 0x0020
+00001802-0000-1000-8000-00805f9b34fb, Immediate Alert Service, 0x0021, 0x0023
+0000180d-0000-1000-8000-00805f9b34fb, Heart Rate Service, 0x0024, 0x0029
+0000fee0-0000-1000-8000-00805f9b34fb, Miband1: Member Service (Anhui Huami Information Technology Co., Ltd.) with most entry point attributes (needs auth), 0x002a, 0x005d
+0000fee1-0000-1000-8000-00805f9b34fb, Miband2: Member Service (Anhui Huami Information Technology Co., Ltd.) with entry point for authentification, 0x005e, 0x0072
+00003802-0000-1000-8000-00805f9b34fb, Unknown, 0x0073, 0x0076
+
