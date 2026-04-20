@@ -1,6 +1,6 @@
 #!/bin/bash
 mac="E0:B2:9B:3E:45:F2"
-tmux new-session -d -s test 'gatttool -I -b E0:B2:9B:3E:45:F2';
+tmux new-session -d -s miband 'gatttool -I -b E0:B2:9B:3E:45:F2';
 tmux send 'connect' ENTER;
 sleep 4;
 tmux send 'char-write-cmd 0060 0100' ENTER;

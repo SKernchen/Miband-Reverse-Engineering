@@ -15,6 +15,9 @@ def translate_hex(hex_text):
     print(asc)
     return erg
 
+def ascii_to_hex(text):
+    return text.encode().hex()
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(prog="helper",
                                      description="This command helps with Mi Band RE",
@@ -22,7 +25,8 @@ if __name__ == "__main__":
     parser.add_argument("-k", "--key", help="insert mi band key")
     parser.add_argument("-V", "--value", required=True, help="Value to perform action with")
     parser.add_argument("--mode", default="hex", help="encrypt: performs AES encryption\n"
-                                                      "hex: Translates hex to decimal and ascii")
+                                                      "hex: Translates hex to decimal and ascii\n"
+                                                    "sth: Performs string to hex")
     args = parser.parse_args()
     mode = args.mode
     key = args.key
@@ -34,5 +38,7 @@ if __name__ == "__main__":
             with open("key.txt") as f:
                 key = f.read()
         print(encrypt(key, value))
+    elif mode == "sth":
+        print(ascii_to_hex(value))
     else:
         print("An error occurred")
