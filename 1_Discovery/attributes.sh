@@ -9,5 +9,3 @@ tmux send 'characteristics' ENTER;
 sleep 5;
 tmux capture-pane -p -S - > ./output.txt
 
-#python helper.py --mode="encrypt" --key="45d3afdf3b3f7e58e88e71cca30cf496" -V="64 91 66 c5 24 b0 39 16 fb 6e 2b ed 7b 7c 4b ec "
-

@@ -12,7 +12,7 @@ echo $out
 seed=$(echo $out | cut -c 9- )
 echo $seed
 
-key=$(python helper.py --mode="encrypt" --key="25a8ee1a52fd05d28c16cdcf588a663b" -V="$seed")
+key=$(python helper.py --mode="encrypt" -V="$seed")
 echo $key
 
 sleep 2;

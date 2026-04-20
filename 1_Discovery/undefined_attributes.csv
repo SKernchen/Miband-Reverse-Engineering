@@ -1,0 +1,29 @@
+# Vendor specific (DFU Firmware Service)
+handle: 0x0015, char properties: 0x18 (Write, Notifications), char value handle: 0x0016, uuid: 00001531-0000-3512-2118-0009af100700, Vendor specific
+handle: 0x0018, char properties: 0x04 (Write without answer), char value handle: 0x0019, uuid: 00001532-0000-3512-2118-0009af100700, Vendor specific
+
+# Miband Service 1 FEE0
+handle: 0x002b, char properties: 0x1a (Read, Write, Notifications), char value handle: 0x002c, uuid: 00002a2b-0000-1000-8000-00805f9b34fb, Current Time
+handle: 0x002e, char properties: 0x14 (Write without answer, Notifications), char value handle: 0x002f, uuid: 00000001-0000-3512-2118-0009af100700, Vendor specific
+handle: 0x0031, char properties: 0x10 (Notifications), char value handle: 0x0032, uuid: 00000002-0000-3512-2118-0009af100700, Vendor specific
+handle: 0x0034, char properties: 0x14 (Write without answer, Notifications), char value handle: 0x0035, uuid: 00000003-0000-3512-2118-0009af100700, Vendor specific
+handle: 0x0037, char properties: 0x16 (Read, Write without answer, Notifications), char value handle: 0x0038, uuid: 00002a04-0000-1000-8000-00805f9b34fb, Peripheral Preferred Connection Parameters
+handle: 0x003a, char properties: 0x14 (Notifications, Write without answer), char value handle: 0x003b, uuid: 00000004-0000-3512-2118-0009af100700, Vendor specific
+handle: 0x003d, char properties: 0x10 (Notifications), char value handle: 0x003e, uuid: 00000005-0000-3512-2118-0009af100700, Vendor specific
+handle: 0x0040, char properties: 0x12 (Read, Notifications), char value handle: 0x0041, uuid: 00000006-0000-3512-2118-0009af100700, Vendor specific
+handle: 0x0043, char properties: 0x12 (Read, Notifications), char value handle: 0x0044, uuid: 00000007-0000-3512-2118-0009af100700, Vendor specific
+handle: 0x0046, char properties: 0x18 (Write, Notifications), char value handle: 0x0047, uuid: 00000008-0000-3512-2118-0009af100700, Vendor specific
+handle: 0x0049, char properties: 0x10 (Notifications), char value handle: 0x004a, uuid: 00000010-0000-3512-2118-0009af100700, Vendor specific
+handle: 0x004c, char properties: 0x16 (Read, Write without answer, Notifications), char value handle: 0x004d, uuid: 00000020-0000-3512-2118-0009af100700, Vendor specific
+handle: 0x004f, char properties: 0x08 (Write), char value handle: 0x0050, uuid: 0000000e-0000-3512-2118-0009af100700, Vendor specific
+handle: 0x0052, char properties: 0x14 (Write without answer, Notifications), char value handle: 0x0053, uuid: 0000000f-0000-3512-2118-0009af100700, Vendor specific
+handle: 0x0055, char properties: 0x16 (Read, Write without answer, Notifications), char value handle: 0x0056, uuid: 00000011-0000-3512-2118-0009af100700, Vendor specific
+handle: 0x0058, char properties: 0x16 (Read, Write without answer, Notifications), char value handle: 0x0059, uuid: 00000012-0000-3512-2118-0009af100700, Vendor specific
+handle: 0x005b, char properties: 0x1a (Read, Write, Notifications), char value handle: 0x005c, uuid: 00000013-0000-3512-2118-0009af100700, Vendor specific
+
+# Miband Service 2 FEE1
+handle: 0x005f, char properties: 0x16 (Read, Write without answer, Notifications), char value handle: 0x0060, uuid: 00000009-0000-3512-2118-0009af100700, Vendor specific (Auth)
+handle: 0x0070, char properties: 0x1a (Read, Write, Notifications), char value handle: 0x0071, uuid: 0000fec1-0000-3512-2118-0009af100700, Vendor specific
+
+# Unknown Service
+handle: 0x0074, char properties: 0x1a (Read, Write, Notifications), char value handle: 0x0075, uuid: 00004a02-0000-1000-8000-00805f9b34fb, Unknown

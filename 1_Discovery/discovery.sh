@@ -15,3 +15,4 @@ if grep -q "$mac" <<< "$(bluetoothctl --timeout 5 scan on)";
 then
   echo "Found Mac Adress of Mi Band"
 fi
+
