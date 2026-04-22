@@ -5,14 +5,15 @@ def encrypt(key, text):
     ass = AES.new(bytes.fromhex(key), AES.MODE_ECB)
     ency = ass.encrypt(bytes.fromhex(text))
     return ency.hex()
-def translate_hex(hex_text):
+def translate_hex(hex_text, no_utf=False):
     li = list(filter(None, hex_text.split(" ")))
     erg = []
     for i in li:
         erg.append(int(i,16))
     print(erg)
-    asc = [chr(x) for x in erg]
-    print(asc)
+    if no_utf is False:
+        asc = [chr(x) for x in erg]
+        print(asc)
     return erg
 
 def ascii_to_hex(text):
@@ -27,12 +28,14 @@ if __name__ == "__main__":
     parser.add_argument("--mode", default="hex", help="encrypt: performs AES encryption\n"
                                                       "hex: Translates hex to decimal and ascii\n"
                                                     "sth: Performs string to hex")
+    parser.add_argument("--no-utf", "--no_utf", action='store_true', help="Does not print utf equal")
     args = parser.parse_args()
     mode = args.mode
     key = args.key
     value = args.value
+    no_utf = args.no_utf
     if mode == "hex":
-        translate_hex(value)
+        translate_hex(value, no_utf)
     elif mode == "encrypt":
         if key is None:
             with open("key.txt") as f:

@@ -1,0 +1,55 @@
+Notification by setting up Running:  0x004a value 14 00 01 01
+Notification by setting up treadmile:  0x004a value 14 00 01 01
+Notification by setting up biking:  0x004a value 14 00 01 03
+Notification by setting up walking:  0x004a value 14 00 01 04
+Notification by setting up freestyle:  0x004a value 14 00 01 05
+Notification by setting up swimming(50):  0x004a value 14 00 01 06
+
+During workout the heart rate measure notify the heart rate.
+
+Setting up alarms: 0x004a value 0a (everytime)
+Musik mode: 0x004a value fe e0 (entering) value fe e1 (leaving)
+
+Random: 0x0041 value 01 3a 00 battery (58%)
+
+After write with no answer calls:
+with 0100
+0x002f 0100 Notif: 0x002f value 10 01 03 01
+0x0035 0100 Notif: 0x0035 value 10 01 06
+0x003b 0100 Notif: 0x003b value 10 01 02
+with 0200
+0x002f 0200 Notif: 0x002f value 10 02 03
+0x0035 0200 Notif: 0x0035 value 10 02 06
+0x003b 0200 Notif: 0x003b value 10 02 04
+with 0300
+0x002f 0300 Notif: 0x002f value 10 03 03
+0x0035 0300 Notif: 0x0035 value 10 03 01 00
+0x003b 0300 Notif: 0x003b value 10 03 01
+
+After 0x0053 0500 ends a workout
+Message 0x0041 value 01 3a 00 battery (58%)
+
+handle, optcode, notif
+0x002f, 0101, 10 01 03 01
+0x002f, 0201, 10 02 03
+0x002f, 0301, 10 03 03
+0x002f, 1601, 10 16 02
+0x0035, 0101, 10 01 06
+0x0035, 0201, 10 02 06
+0x0035, 0301, 10 03 01 01 47 03 00 00 0c 00 01 00 04 00 00 00
+0x003b, 0101, 10 01 02
+0x003b, 0201, 10 02 04
+0x003b, 0301, 10 03 01
+0x003b, 1601, 10 16 02
+0x003b, 1501, 10 15 02
+0x003b, 160101, 10 16 02
+0x004d, 1601, 10 16 01 02 00 00 00
+
+starting gyro:
+most times 20 byte (start with 01) notif sometimes 8 (start with 01 maybe lost bytes) and 11 (start with 80) bytes inbetween
+0x0032 01 93 10 01 65 00 18 
+00 ef 00 50 00 f0 
+ff 11 01 6c 00 e1 ff
+0x0032 01 94 f8 00 56 00 bc ff dc 00 5f 00 e9 ff 13 01 6c 00 e1 ff
+0x0032 01 95 f8 00 7d 00 01 00
+0x0032 80 7f 01 c0 45 7c 00 00 00 00 00

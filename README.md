@@ -58,6 +58,7 @@ Or you can try out the examples in the normal bash:
 
 ### 2_Examples
 Here are some example scripts to show the access to the attributes. The auth script has to be run before the example, cause they are using the tmux session created in auth.
+- Explain Variables
 
 ### 3_Define_attributes
 After auth, every attribute can be tested and explored. This directory holds some example scripts and the results.

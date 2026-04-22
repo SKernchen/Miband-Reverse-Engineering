@@ -1,0 +1,31 @@
+Displayed on Mi Band
+time:11:56 Di 21.04.2026  already defined in 002c current time
+steps : 1461 (5b5 hex) 1.05km (41a hex) 32cal (20 hex) 0inactivity warning, 
+battery: 66% (42 hex) 
+notification: 11 
+Firmware version: V1.0.9.70
+
+
+hnd 002c time
+Characteristic value/descriptor: ea 07 04 15 0b 38 04 02 00 00 08
+ea07 year 04 month 15 day 0b hour 38 minute 04 seconds? 02 weekday
+
+hnd 0038 peripheral Preferred Connection Parameters
+Characteristic value/descriptor: 24 00 24 00 09 00 f4 01 (36 00)
+
+hnd 0041 battery level
+Characteristic value/descriptor: 0f 42 00 ea 07 01 01 0b 0d 16 04 ea 07 04 12 0e 2a 29 08 63
+42 battery
+
+hnd 0044 steps
+Characteristic value/descriptor: 0c b5 05 00 00 1b 04 00 00 20 00 00 00
+0c = 12 bytes, each 4: b5 05 Steps 1b 04 meters(rounding to kilometers (a instead of b)) 20 calories
+
+hnd 004d chunked transfer
+Characteristic value/descriptor: 04
+hnd 0056
+Error: Characteristic value/descriptor read failed: Attribute can't be read
+hnd 0059
+Characteristic value/descriptor: 0c (12 dec)
+hnd 005c
+Characteristic value/descriptor:
