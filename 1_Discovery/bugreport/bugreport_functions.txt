@@ -1,0 +1,35 @@
+Miband 4
+-connect
+-auth, time 5.90 frame 182 auth complete uuid 0x0009
+-heart rate monitoring, each minute frame 1108 time 459.529 heartbeat at 1123
+-heart rate meassure, frame 1129
+-menstruation cycle
+-steps, frame 1099
+-record workout, frame 1107 start 1146 stop
+-notifications on
+-alarm
+-music control (stop, start, louder, quiter, next song, previous song), frame 1414 song name to 0x0002 notifs from 0x0001
+-stopp clock
+-find phone
+-check weather, frame 1671 0x0004 what are you sending 0x0002 again for data transmission
+
+Miband 5
+-connect (two times)
+-auth
+-heart rate monitoring each minute
+-heart rate meassure
+-firmware update
+-menstruation cycle
+-steps
+-record workout
+-notifications on
+-alarm
+-music control (stop, start, louder, quiter, next song, previous song)
+-stopp clock
+-find phone
+-coupling
+-camera control 2
+-stress
+-breathing
+-find band
+
