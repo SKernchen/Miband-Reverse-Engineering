@@ -22,7 +22,7 @@ char handle_4, char handle_5, char properties, uuid, name
 0x003b, 0x003e, 0x14, 00000004-0000-3512-2118-0009af100700, Vendor specific (Fetch)
 0x003e, 0x0041, 0x10, 00000005-0000-3512-2118-0009af100700, Vendor specific (Activity Data)
 0x0041, 0x0044, 0x12, 00000006-0000-3512-2118-0009af100700, Vendor specific (Battery)
-0x0044, 0x0047, 0x12, 00000007-0000-3512-2118-0009af100700, Vendor specific (Steps, meters, calories)
+0x0044, 0x0047, 0x12, 00000007-0000-3512-2118-0009af100700, Vendor specific (Steps meters calories)
 0x0047, 0x004a, 0x18, 00000008-0000-3512-2118-0009af100700, Vendor specific (User settings)
 0x004a, 0x004d, 0x10, 00000010-0000-3512-2118-0009af100700, Vendor specific (Event)
 0x004d, 0x0050, 0x16, 00000020-0000-3512-2118-0009af100700, Vendor specific (Chunked Transfer)
