@@ -1,53 +1,54 @@
-# [E0:B2:9B:3E:45:F2][LE]> characteristics
-# GAP Service
-handle: 0x0002, char properties: 0x02, char value handle: 0x0003, uuid: 00002a00-0000-1000-8000-00805f9b34fb, Device Name
-handle: 0x0004, char properties: 0x02, char value handle: 0x0005, uuid: 00002a01-0000-1000-8000-00805f9b34fb, Appearance
-handle: 0x0006, char properties: 0x02, char value handle: 0x0007, uuid: 00002a04-0000-1000-8000-00805f9b34fb, Peripheral Preferred Connection Parameters
-# Device Information Service
-handle: 0x000a, char properties: 0x02, char value handle: 0x000b, uuid: 00002a25-0000-1000-8000-00805f9b34fb, Serial Number String
-handle: 0x000c, char properties: 0x02, char value handle: 0x000d, uuid: 00002a27-0000-1000-8000-00805f9b34fb, Hardware Revision String
-handle: 0x000e, char properties: 0x02, char value handle: 0x000f, uuid: 00002a28-0000-1000-8000-00805f9b34fb, Software Revision String
-handle: 0x0010, char properties: 0x02, char value handle: 0x0011, uuid: 00002a23-0000-1000-8000-00805f9b34fb, System ID
-handle: 0x0012, char properties: 0x02, char value handle: 0x0013, uuid: 00002a50-0000-1000-8000-00805f9b34fb, PnP ID
-# Vendor specific (DFU Firmware Service)
-handle: 0x0015, char properties: 0x18, char value handle: 0x0016, uuid: 00001531-0000-3512-2118-0009af100700, Vendor specific
-handle: 0x0018, char properties: 0x04, char value handle: 0x0019, uuid: 00001532-0000-3512-2118-0009af100700, Vendor specific
-# Alert Notification Service
-handle: 0x001b, char properties: 0x0a, char value handle: 0x001c, uuid: 00002a46-0000-1000-8000-00805f9b34fb, New Alert
-handle: 0x001e, char properties: 0x1a, char value handle: 0x001f, uuid: 00002a44-0000-1000-8000-00805f9b34fb, Alert Notification Control Point
-# Immediate Alert Service
-handle: 0x0022, char properties: 0x04, char value handle: 0x0023, uuid: 00002a06-0000-1000-8000-00805f9b34fb, Alert Level
-# Heart Rate Service
-handle: 0x0025, char properties: 0x10, char value handle: 0x0026, uuid: 00002a37-0000-1000-8000-00805f9b34fb, Heart Rate Measurement
-handle: 0x0028, char properties: 0x0a, char value handle: 0x0029, uuid: 00002a39-0000-1000-8000-00805f9b34fb, Heart Rate Control Point
-# Miband Service 1 FEE0
-handle: 0x002b, char properties: 0x1a, char value handle: 0x002c, uuid: 00002a2b-0000-1000-8000-00805f9b34fb, Current Time
-handle: 0x002e, char properties: 0x14, char value handle: 0x002f, uuid: 00000001-0000-3512-2118-0009af100700, Vendor specific
-handle: 0x0031, char properties: 0x10, char value handle: 0x0032, uuid: 00000002-0000-3512-2118-0009af100700, Vendor specific
-handle: 0x0034, char properties: 0x14, char value handle: 0x0035, uuid: 00000003-0000-3512-2118-0009af100700, Vendor specific
-handle: 0x0037, char properties: 0x16, char value handle: 0x0038, uuid: 00002a04-0000-1000-8000-00805f9b34fb, Peripheral Preferred Connection Parameters
-handle: 0x003a, char properties: 0x14, char value handle: 0x003b, uuid: 00000004-0000-3512-2118-0009af100700, Vendor specific
-handle: 0x003d, char properties: 0x10, char value handle: 0x003e, uuid: 00000005-0000-3512-2118-0009af100700, Vendor specific
-handle: 0x0040, char properties: 0x12, char value handle: 0x0041, uuid: 00000006-0000-3512-2118-0009af100700, Vendor specific
-handle: 0x0043, char properties: 0x12, char value handle: 0x0044, uuid: 00000007-0000-3512-2118-0009af100700, Vendor specific
-handle: 0x0046, char properties: 0x18, char value handle: 0x0047, uuid: 00000008-0000-3512-2118-0009af100700, Vendor specific
-handle: 0x0049, char properties: 0x10, char value handle: 0x004a, uuid: 00000010-0000-3512-2118-0009af100700, Vendor specific
-handle: 0x004c, char properties: 0x16, char value handle: 0x004d, uuid: 00000020-0000-3512-2118-0009af100700, Vendor specific
-handle: 0x004f, char properties: 0x08, char value handle: 0x0050, uuid: 0000000e-0000-3512-2118-0009af100700, Vendor specific
-handle: 0x0052, char properties: 0x14, char value handle: 0x0053, uuid: 0000000f-0000-3512-2118-0009af100700, Vendor specific
-handle: 0x0055, char properties: 0x16, char value handle: 0x0056, uuid: 00000011-0000-3512-2118-0009af100700, Vendor specific
-handle: 0x0058, char properties: 0x16, char value handle: 0x0059, uuid: 00000012-0000-3512-2118-0009af100700, Vendor specific
-handle: 0x005b, char properties: 0x1a, char value handle: 0x005c, uuid: 00000013-0000-3512-2118-0009af100700, Vendor specific
-# Miband Service 2 FEE1
-handle: 0x005f, char properties: 0x16, char value handle: 0x0060, uuid: 00000009-0000-3512-2118-0009af100700, Vendor specific (Auth)
-handle: 0x0062, char properties: 0x08, char value handle: 0x0063, uuid: 0000fedd-0000-1000-8000-00805f9b34fb, Jawbone
-handle: 0x0064, char properties: 0x02, char value handle: 0x0065, uuid: 0000fede-0000-1000-8000-00805f9b34fb, Coin Inc.
-handle: 0x0066, char properties: 0x02, char value handle: 0x0067, uuid: 0000fedf-0000-1000-8000-00805f9b34fb, Design SHIFT
-handle: 0x0068, char properties: 0x0a, char value handle: 0x0069, uuid: 0000fed0-0000-1000-8000-00805f9b34fb, Apple Inc.
-handle: 0x006a, char properties: 0x0a, char value handle: 0x006b, uuid: 0000fed1-0000-1000-8000-00805f9b34fb, Apple Inc.
-handle: 0x006c, char properties: 0x02, char value handle: 0x006d, uuid: 0000fed2-0000-1000-8000-00805f9b34fb, Apple Inc.
-handle: 0x006e, char properties: 0x0a, char value handle: 0x006f, uuid: 0000fed3-0000-1000-8000-00805f9b34fb, Apple Inc.
-handle: 0x0070, char properties: 0x1a, char value handle: 0x0071, uuid: 0000fec1-0000-3512-2118-0009af100700, Vendor specific
-# Unknown Service
-handle: 0x0074, char properties: 0x1a, char value handle: 0x0075, uuid: 00004a02-0000-1000-8000-00805f9b34fb, Unknown
-
+char handle_4, char handle_5, char properties, uuid, name
+0x0003, 0x0003, 0x02, 00002a00-0000-1000-8000-00805f9b34fb, Device Name
+0x0005, 0x0005, 0x02, 00002a01-0000-1000-8000-00805f9b34fb, Appearance
+0x0007, 0x0007, 0x02, 00002a04-0000-1000-8000-00805f9b34fb, Peripheral Preferred Connection Parameters  
+0x000b, 0x000b, 0x02, 00002a25-0000-1000-8000-00805f9b34fb, Serial Number String
+0x000d, 0x000d, 0x02, 00002a27-0000-1000-8000-00805f9b34fb, Hardware Revision String
+0x000f, 0x000f, 0x02, 00002a28-0000-1000-8000-00805f9b34fb, Software Revision String
+0x0011, 0x0011, 0x02, 00002a23-0000-1000-8000-00805f9b34fb, System ID
+0x0013, 0x0013, 0x02, 00002a50-0000-1000-8000-00805f9b34fb, PnP ID
+-, 0x0015, 0x14, 00000014-0000-3512-2118-0009af100700, Vendor specific
+0x0015, 0x0019, 0x18, 00001531-0000-3512-2118-0009af100700, Vendor specific (Firmware)
+0x0019, 0x001c, 0x04, 00001532-0000-3512-2118-0009af100700, Vendor specific (Firmware write) 
+0x001c, 0x001f, 0x0a, 00002a46-0000-1000-8000-00805f9b34fb, New Alert 
+0x001f, 0x0022, 0x1a, 00002a44-0000-1000-8000-00805f9b34fb, Alert Notification Control Point  
+0x0026, 0x0029, 0x10, 00002a37-0000-1000-8000-00805f9b34fb, Heart Rate Measurement
+0x0029, 0x002c, 0x0a, 00002a39-0000-1000-8000-00805f9b34fb, Heart Rate Control Point
+0x002c, 0x002f, 0x1a, 00002a2b-0000-1000-8000-00805f9b34fb, Current Time
+0x002f, 0x0032, 0x14, 00000001-0000-3512-2118-0009af100700, Vendor specific (control)
+0x0032, 0x0035, 0x10, 00000002-0000-3512-2118-0009af100700, Vendor specific (I/O)
+0x0035, 0x0038, 0x14, 00000003-0000-3512-2118-0009af100700, Vendor specific (Configuration)
+0x0038, 0x003b, 0x16, 00002a04-0000-1000-8000-00805f9b34fb, Peripheral Preferred Connection Parameters
+0x003b, 0x003e, 0x14, 00000004-0000-3512-2118-0009af100700, Vendor specific (Fetch)
+0x003e, 0x0041, 0x10, 00000005-0000-3512-2118-0009af100700, Vendor specific (Activity Data)
+0x0041, 0x0044, 0x12, 00000006-0000-3512-2118-0009af100700, Vendor specific (Battery)
+0x0044, 0x0047, 0x12, 00000007-0000-3512-2118-0009af100700, Vendor specific (Steps, meters, calories)
+0x0047, 0x004a, 0x18, 00000008-0000-3512-2118-0009af100700, Vendor specific (User settings)
+0x004a, 0x004d, 0x10, 00000010-0000-3512-2118-0009af100700, Vendor specific (Event)
+0x004d, 0x0050, 0x16, 00000020-0000-3512-2118-0009af100700, Vendor specific (Chunked Transfer)
+0x0050, 0x0053, 0x08, 0000000e-0000-3512-2118-0009af100700, Vendor specific
+0x0053, 0x0056, 0x14, 0000000f-0000-3512-2118-0009af100700, Vendor specific (Activity Mode)
+0x0056, 0x0059, 0x16, 00000011-0000-3512-2118-0009af100700, Vendor specific
+0x0059, 0x005c, 0x16, 00000012-0000-3512-2118-0009af100700, Vendor specific
+0x005c, 0x005f, 0x1a, 00000013-0000-3512-2118-0009af100700, Vendor specific
+-, 0x0062, 0x14, 00000016-0000-3512-2118-0009af100700, Vendor specific
+-, 0x0065, 0x14, 00000017-0000-3512-2118-0009af100700, Vendor specific
+0x0060, 0x0069, 0x16, 00000009-0000-3512-2118-0009af100700, Vendor specific (Auth)
+0x0063, 0x006c, 0x08, 0000fedd-0000-1000-8000-00805f9b34fb, Jawbone
+0x0065, 0x006e, 0x02, 0000fede-0000-1000-8000-00805f9b34fb, Coin Inc.
+0x0067, 0x0070, 0x02, 0000fedf-0000-1000-8000-00805f9b34fb, Design SHIFT
+0x0069, 0x0072, 0x0a, 0000fed0-0000-1000-8000-00805f9b34fb, Apple Inc.
+0x006b, 0x0074, 0x0a, 0000fed1-0000-1000-8000-00805f9b34fb, Apple Inc.
+0x006d, 0x0076, 0x02, 0000fed2-0000-1000-8000-00805f9b34fb, Apple Inc.
+0x006f, 0x0078, 0x0a, 0000fed3-0000-1000-8000-00805f9b34fb, Apple Inc.
+0x0071, 0x007a, 0x1a, 0000fec1-0000-3512-2118-0009af100700, Vendor specific
+-, 0x007e, 0x12, 00002a19-0000-1000-8000-00805f9b34fb, Battery Level
+-, 0x0082, 0x06, 00002a4e-0000-1000-8000-00805f9b34fb, Protocol  
+-, 0x0084, 0x02, 00002a4b-0000-1000-8000-00805f9b34fb, Report  
+-, 0x0086, 0x02, 00002a4a-0000-1000-8000-00805f9b34fb, HID  
+-, 0x0088, 0x04, 00002a4c-0000-1000-8000-00805f9b34fb, HID Control  
+-, 0x008a, 0x1a, 00002a4d-0000-1000-8000-00805f9b34fb, Report
+-, 0x008e, 0x1a, 00002a4d-0000-1000-8000-00805f9b34fb, Report
+-, 0x0092, 0x12, 00002a22-0000-1000-8000-00805f9b34fb, Boot Keyboard Input  
+-, 0x0095, 0x0e, 00002a32-0000-1000-8000-00805f9b34fb, Boot Keyboard Output Report
+0x0075, 0x0098, 0x1a, 00004a02-0000-1000-8000-00805f9b34fb, Unknown
