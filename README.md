@@ -88,14 +88,15 @@ The scripts were used to strategically test the attributes. The Outcomes are als
 Here are Examples with Vendor specific attributes. It works just as in [2_Examples](https://github.com/SKernchen/Miband-Reverse-Engineering#2_examples)
 - example activity
 Starts an activity (like running) on the Mi Band. Running is default, with the parameter you can change the mode:
-| Activity | Code |
-| -------|------- |
-| Running | 00 |
-| Running (treadmile) | 01 |
-| Bycicle | 02 |
-| Walking | 03 |
-| Freestyle | 04 |
-| Swimming | 05 |
+
+| Activity           | Code |
+| -------------------|----- |
+| Running            | 00   |
+| Running (treadmile)| 01   |
+| Bycicle            | 02   |
+| Walking            | 03   |
+| Freestyle          | 04   |
+| Swimming           | 05   |
 - example steps
 Prints current Steps, Meters and Calories
 - example gyroscope
