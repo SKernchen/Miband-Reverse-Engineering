@@ -33,6 +33,8 @@ tmux kill-session -t miband
 ### 1_Discovery
 In this directory are the scripts to discover the Mi Band Bluetooth communication.
 
+- bugreport
+This directory contains snippets of the communication between Mi Band and Smartphone. Most characteristics are already used there and can be determined by looking in the sended commands.
 - discovery.sh
 This file show how to see if a Bluetooth adapter is running on your system and if it can find the Mi Band based on the Mac adress.
 - list-attributes.sh
@@ -58,9 +60,46 @@ Or you can try out the examples in the normal bash:
 
 ### 2_Examples
 Here are some example scripts to show the access to the attributes. The auth script has to be run before the example, cause they are using the tmux session created in auth.
-- Explain Variables
+> Note that the Handles for Mi Band 4 are used. For Mi Band 5 look into the [characteristics](https://github.com/SKernchen/Miband-Reverse-Engineering/blob/main/characteristics.csv) and use the char handle_5 handle.
+- example alert
+Shows a message(with vibration) on the Mi Band. Default is "hallo". You can change the text by using the shell parameter and write the message you want, for example:
+```
+./example_alert.sh "Hello World"
+```
+- example device name
+Prints the Device name in the terminal
+- example heart rate
+Starts continuous measurement of the heart rate and prints it. The parameter decides the time for how long you want to run it, default is 30 seconds.
 
 ### 3_Define_attributes
 After auth, every attribute can be tested and explored. This directory holds some example scripts and the results.
-In the end, the undefined attributes are defined(most) and described with the interpretation.
+In the end, the most undefined attributes are defined and described with the interpretation.
+The scripts are:
+- read_unknown.sh
+Executes a read command.
+- notify_on.sh
+Sets every notify on descriptor on true.
+- write_chars.sh
+Executes write with and without answer.
+> Note that the Handles for Mi Band 4 are used. For Mi Band 5 look into the [characteristics](https://github.com/SKernchen/Miband-Reverse-Engineering/blob/main/characteristics.csv) and use the char handle_5 handle.
+The scripts were used to strategically test the attributes. The Outcomes are also in the directory.
 
+### 4_Examples
+Here are Examples with Vendor specific attributes. It works just as in [2_Examples](https://github.com/SKernchen/Miband-Reverse-Engineering#2_examples)
+- example activity
+Starts an activity (like running) on the Mi Band. Running is default, with the parameter you can change the mode:
+| Activity | Code |
+| -------|------- |
+| Running | 00 |
+| Running (treadmile) | 01 |
+| Bycicle | 02 |
+| Walking | 03 |
+| Freestyle | 04 |
+| Swimming | 05 |
+- example steps
+Prints current Steps, Meters and Calories
+- example gyroscope
+Starts gyroscope, prints average output. The parameter is the running time, default is 15 seconds.
+
+### 5_Miband_5
+Shows specific results for Mi Band 5.
