@@ -9,7 +9,7 @@ sleep 0.5;
 tmux send -t miband 'char-write-cmd 002f 010119' ENTER;
 sleep 2;
 tmux send -t miband 'char-write-cmd 002f 02' ENTER;
-time=15
+time=35
 if [ $# -eq 1 ]
   then
     time=$1
